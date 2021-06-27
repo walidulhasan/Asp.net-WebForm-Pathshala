@@ -1,0 +1,1147 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D19C7C7D-4425-486B-A0AD-6BDC20D046E9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>pathshala</RootNamespace>
+    <AssemblyName>pathshala</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.6.0\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="ASPSnippets.GoogleAPI">
+      <HintPath>C:\Users\User\Downloads\Sign in with Gmail Account\ASPSnippets.GoogleAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about_us.html" />
+    <Content Include="add_streaming.aspx" />
+    <Content Include="AjazProcessImage\Bean Eater.gif" />
+    <Content Include="AjazProcessImage\Blocks-1.1s-56px.gif" />
+    <Content Include="AjazProcessImage\Cube-1.1s-56px.gif" />
+    <Content Include="AjazProcessImage\Infinity-1s-37px.gif" />
+    <Content Include="AjazProcessImage\little.gif" />
+    <Content Include="AjazProcessImage\process.gif" />
+    <Content Include="AjazProcessImage\process1.gif" />
+    <Content Include="AjazProcessImage\Radio.gif" />
+    <Content Include="AjazProcessImage\Spinner-1s-56px.gif" />
+    <Content Include="AjazProcessImage\Spinner.gif" />
+    <Content Include="AjazProcessImage\Spinnerx.gif" />
+    <Content Include="all_instructor.aspx" />
+    <Content Include="apply_job.html" />
+    <Content Include="blog_single_view.html" />
+    <Content Include="career.html" />
+    <Content Include="categories.aspx" />
+    <Content Include="certification_center.html" />
+    <Content Include="certification_start_form.html" />
+    <Content Include="certification_test_view.html" />
+    <Content Include="certification_test__result.html" />
+    <Content Include="checkout_membership.html" />
+    <Content Include="coming_soon.html" />
+    <Content Include="company_details.html" />
+    <Content Include="contact_us.html" />
+    <Content Include="Content\bootstrap-datepicker.css" />
+    <Content Include="Content\bootstrap-datepicker.min.css" />
+    <Content Include="Content\bootstrap-datepicker.standalone.css" />
+    <Content Include="Content\bootstrap-datepicker.standalone.min.css" />
+    <Content Include="Content\bootstrap-datepicker3.css" />
+    <Content Include="Content\bootstrap-datepicker3.min.css" />
+    <Content Include="Content\bootstrap-datepicker3.standalone.css" />
+    <Content Include="Content\bootstrap-datepicker3.standalone.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="course_detail_view.aspx" />
+    <Content Include="css\datepicker.min.css" />
+    <Content Include="css\instructor-dashboard.css" />
+    <Content Include="css\instructor-responsive.css" />
+    <Content Include="css\jquery-steps.css" />
+    <Content Include="css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="css\night-mode.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\semantic.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\vertical-responsive-menu.min.css" />
+    <Content Include="css\vertical-responsive-menu1.min.css" />
+    <Content Include="datedropper\datedropper.css" />
+    <Content Include="datedropper\datedropper.js" />
+    <Content Include="datedropper\datedropper.min.css" />
+    <Content Include="datedropper\datedropper.min.js" />
+    <Content Include="datedropper\Datedropper3\datedropper.css" />
+    <Content Include="datedropper\Datedropper3\datedropper.js" />
+    <Content Include="datedropper\Datedropper3\datedropper.min.css" />
+    <Content Include="datedropper\Datedropper3\datedropper.min.js" />
+    <Content Include="datedropper\Datedropper3\src\datedropper.svg" />
+    <Content Include="datedropper\src\datedropper.svg" />
+    <Content Include="Default.aspx" />
+    <Content Include="error.aspx" />
+    <Content Include="error_404.html" />
+    <Content Include="explore.aspx" />
+    <Content Include="feedback.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="forgot_password.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="help.aspx" />
+    <Content Include="history.aspx" />
+    <Content Include="images\about\career-1.jpg" />
+    <Content Include="images\about\career-2.jpg" />
+    <Content Include="images\about\career-3.jpg" />
+    <Content Include="images\about\career-4.jpg" />
+    <Content Include="images\about\company-1.jpg" />
+    <Content Include="images\about\company-2.jpg" />
+    <Content Include="images\about\company-3.jpg" />
+    <Content Include="images\about\company.jpg" />
+    <Content Include="images\about\stroy_img.png" />
+    <Content Include="images\about\team.jpg" />
+    <Content Include="images\blog\big_blog.jpg" />
+    <Content Include="images\blog\img-1.jpg" />
+    <Content Include="images\blog\img-2.jpg" />
+    <Content Include="images\blog\img-3.jpg" />
+    <Content Include="images\blog\img-4.jpg" />
+    <Content Include="images\blog_icon.svg" />
+    <Content Include="images\career_icon.svg" />
+    <Content Include="images\cerificate_center\certicon.svg" />
+    <Content Include="images\cerificate_center\certificat\certificate.jpg" />
+    <Content Include="images\cerificate_center\instructor.svg" />
+    <Content Include="images\cerificate_center\plus.svg" />
+    <Content Include="images\cerificate_center\student.svg" />
+    <Content Include="images\certificate.jpg" />
+    <Content Include="images\courses\add_img.jpg" />
+    <Content Include="images\courses\add_video.jpg" />
+    <Content Include="images\courses\img-1.jpg" />
+    <Content Include="images\courses\img-11.jpg" />
+    <Content Include="images\courses\img-12.jpg" />
+    <Content Include="images\courses\img-13.jpg" />
+    <Content Include="images\courses\img-14.jpg" />
+    <Content Include="images\courses\img-16.jpg" />
+    <Content Include="images\courses\img-18.jpg" />
+    <Content Include="images\courses\img-19.jpg" />
+    <Content Include="images\courses\img-2.jpg" />
+    <Content Include="images\courses\img-20.jpg" />
+    <Content Include="images\courses\img-3.jpg" />
+    <Content Include="images\courses\img-4.jpg" />
+    <Content Include="images\courses\img-5.jpg" />
+    <Content Include="images\courses\img-6.jpg" />
+    <Content Include="images\courses\img-7.jpg" />
+    <Content Include="images\courses\img-8.jpg" />
+    <Content Include="images\courses\news-1.jpg" />
+    <Content Include="images\courses\news-2.jpg" />
+    <Content Include="images\ct_logo.svg" />
+    <Content Include="images\dashboard\achievement.svg" />
+    <Content Include="images\dashboard\graduation-cap.svg" />
+    <Content Include="images\dashboard\knowledge.svg" />
+    <Content Include="images\dashboard\online-course.svg" />
+    <Content Include="images\dashboard\promotion.svg" />
+    <Content Include="images\developer_icon.svg" />
+    <Content Include="images\fav.png" />
+    <Content Include="images\get-img.jpg" />
+    <Content Include="images\hd_dp.jpg" />
+    <Content Include="images\help_icon.svg" />
+    <Content Include="images\invoice_logo.svg" />
+    <Content Include="images\left-imgs\img-1.jpg" />
+    <Content Include="images\left-imgs\img-10.jpg" />
+    <Content Include="images\left-imgs\img-10.png" />
+    <Content Include="images\left-imgs\img-11.jpg" />
+    <Content Include="images\left-imgs\img-12.jpg" />
+    <Content Include="images\left-imgs\img-13.jpg" />
+    <Content Include="images\left-imgs\img-14.jpg" />
+    <Content Include="images\left-imgs\img-15.jpg" />
+    <Content Include="images\left-imgs\img-16.jpg" />
+    <Content Include="images\left-imgs\img-17.jpg" />
+    <Content Include="images\left-imgs\img-2.jpg" />
+    <Content Include="images\left-imgs\img-3.jpg" />
+    <Content Include="images\left-imgs\img-4.jpg" />
+    <Content Include="images\left-imgs\img-5.jpg" />
+    <Content Include="images\left-imgs\img-6.jpg" />
+    <Content Include="images\left-imgs\img-7.jpg" />
+    <Content Include="images\left-imgs\img-8.jpg" />
+    <Content Include="images\left-imgs\img-9.jpg" />
+    <Content Include="images\line.svg" />
+    <Content Include="images\logo.svg" />
+    <Content Include="images\logo1.svg" />
+    <Content Include="images\logoother.png" />
+    <Content Include="images\membership\icon-1.svg" />
+    <Content Include="images\membership\icon-2.svg" />
+    <Content Include="images\membership\pyicon-1.svg" />
+    <Content Include="images\membership\pyicon-2.svg" />
+    <Content Include="images\membership\pyicon-3.svg" />
+    <Content Include="images\membership\pyicon-4.svg" />
+    <Content Include="images\membership\pyicon-5.svg" />
+    <Content Include="images\mylogos.png" />
+    <Content Include="images\payoneer.svg" />
+    <Content Include="images\sign.SVG" />
+    <Content Include="images\sign_logo.png" />
+    <Content Include="images\verified-account.svg" />
+    <Content Include="Instructor\Default.aspx" />
+    <Content Include="Instructor\feedback.aspx" />
+    <Content Include="Instructor\forgot_password.aspx" />
+    <Content Include="Instructor\help.aspx" />
+    <Content Include="Instructor\images\about\career-1.jpg" />
+    <Content Include="Instructor\images\about\career-2.jpg" />
+    <Content Include="Instructor\images\about\career-3.jpg" />
+    <Content Include="Instructor\images\about\career-4.jpg" />
+    <Content Include="Instructor\images\about\company-1.jpg" />
+    <Content Include="Instructor\images\about\company-2.jpg" />
+    <Content Include="Instructor\images\about\company-3.jpg" />
+    <Content Include="Instructor\images\about\company.jpg" />
+    <Content Include="Instructor\images\about\stroy_img.png" />
+    <Content Include="Instructor\images\about\team.jpg" />
+    <Content Include="Instructor\images\blog\big_blog.jpg" />
+    <Content Include="Instructor\images\blog\img-1.jpg" />
+    <Content Include="Instructor\images\blog\img-2.jpg" />
+    <Content Include="Instructor\images\blog\img-3.jpg" />
+    <Content Include="Instructor\images\blog\img-4.jpg" />
+    <Content Include="Instructor\images\blog_icon.svg" />
+    <Content Include="Instructor\images\career_icon.svg" />
+    <Content Include="Instructor\images\cerificate_center\certicon.svg" />
+    <Content Include="Instructor\images\cerificate_center\instructor.svg" />
+    <Content Include="Instructor\images\cerificate_center\plus.svg" />
+    <Content Include="Instructor\images\cerificate_center\student.svg" />
+    <Content Include="Instructor\images\courses\add_img.jpg" />
+    <Content Include="Instructor\images\courses\add_video.jpg" />
+    <Content Include="Instructor\images\courses\img-1.jpg" />
+    <Content Include="Instructor\images\courses\img-11.jpg" />
+    <Content Include="Instructor\images\courses\img-12.jpg" />
+    <Content Include="Instructor\images\courses\img-13.jpg" />
+    <Content Include="Instructor\images\courses\img-14.jpg" />
+    <Content Include="Instructor\images\courses\img-16.jpg" />
+    <Content Include="Instructor\images\courses\img-18.jpg" />
+    <Content Include="Instructor\images\courses\img-19.jpg" />
+    <Content Include="Instructor\images\courses\img-2.jpg" />
+    <Content Include="Instructor\images\courses\img-20.jpg" />
+    <Content Include="Instructor\images\courses\img-3.jpg" />
+    <Content Include="Instructor\images\courses\img-4.jpg" />
+    <Content Include="Instructor\images\courses\img-5.jpg" />
+    <Content Include="Instructor\images\courses\img-6.jpg" />
+    <Content Include="Instructor\images\courses\img-7.jpg" />
+    <Content Include="Instructor\images\courses\img-8.jpg" />
+    <Content Include="Instructor\images\courses\news-1.jpg" />
+    <Content Include="Instructor\images\courses\news-2.jpg" />
+    <Content Include="Instructor\images\ct_logo.svg" />
+    <Content Include="Instructor\images\dashboard\achievement.svg" />
+    <Content Include="Instructor\images\dashboard\graduation-cap.svg" />
+    <Content Include="Instructor\images\dashboard\knowledge.svg" />
+    <Content Include="Instructor\images\dashboard\online-course.svg" />
+    <Content Include="Instructor\images\dashboard\promotion.svg" />
+    <Content Include="Instructor\images\developer_icon.svg" />
+    <Content Include="Instructor\images\fav.png" />
+    <Content Include="Instructor\images\get-img.jpg" />
+    <Content Include="Instructor\images\hd_dp.jpg" />
+    <Content Include="Instructor\images\help_icon.svg" />
+    <Content Include="Instructor\images\invoice_logo.svg" />
+    <Content Include="Instructor\images\left-imgs\img-1.jpg" />
+    <Content Include="Instructor\images\left-imgs\img-10.jpg" />
+    <Content Include="Instructor\images\left-imgs\img-11.jpg" />
+    <Content Include="Instructor\images\left-imgs\img-12.jpg" />
+    <Content Include="Instructor\images\left-imgs\img-13.jpg" />
+    <Content Include="Instructor\images\left-imgs\img-14.jpg" />
+    <Content Include="Instructor\images\left-imgs\img-15.jpg" />
+    <Content Include="Instructor\images\left-imgs\img-16.jpg" />
+    <Content Include="Instructor\images\left-imgs\img-17.jpg" />
+    <Content Include="Instructor\images\left-imgs\img-2.jpg" />
+    <Content Include="Instructor\images\left-imgs\img-3.jpg" />
+    <Content Include="Instructor\images\left-imgs\img-4.jpg" />
+    <Content Include="Instructor\images\left-imgs\img-5.jpg" />
+    <Content Include="Instructor\images\left-imgs\img-6.jpg" />
+    <Content Include="Instructor\images\left-imgs\img-7.jpg" />
+    <Content Include="Instructor\images\left-imgs\img-8.jpg" />
+    <Content Include="Instructor\images\left-imgs\img-9.jpg" />
+    <Content Include="Instructor\images\line.svg" />
+    <Content Include="Instructor\images\liteLogo.png" />
+    <Content Include="Instructor\images\logo.svg" />
+    <Content Include="Instructor\images\logo1.svg" />
+    <Content Include="Instructor\images\membership\icon-1.svg" />
+    <Content Include="Instructor\images\membership\icon-2.svg" />
+    <Content Include="Instructor\images\membership\pyicon-1.svg" />
+    <Content Include="Instructor\images\membership\pyicon-2.svg" />
+    <Content Include="Instructor\images\membership\pyicon-3.svg" />
+    <Content Include="Instructor\images\membership\pyicon-4.svg" />
+    <Content Include="Instructor\images\membership\pyicon-5.svg" />
+    <Content Include="Instructor\images\payoneer.svg" />
+    <Content Include="Instructor\images\sign_logo.png" />
+    <Content Include="Instructor\images\verified-account.svg" />
+    <Content Include="Instructor\instructor_all_reviews.aspx" />
+    <Content Include="Instructor\instructor_analyics.aspx" />
+    <Content Include="Instructor\instructor_courses.aspx" />
+    <Content Include="Instructor\instructor_dashboard.aspx" />
+    <Content Include="Instructor\instructor_earning.aspx" />
+    <Content Include="Instructor\instructor_messages.aspx" />
+    <Content Include="Instructor\instructor_my_certificates.aspx" />
+    <Content Include="Instructor\instructor_notifications.aspx" />
+    <Content Include="Instructor\instructor_payout.aspx" />
+    <Content Include="Instructor\instructor_statements.aspx" />
+    <Content Include="Instructor\instructor_verification.aspx" />
+    <Content Include="Instructor\my_instructor_profile_view.aspx" />
+    <Content Include="Instructor\setting.aspx" />
+    <Content Include="Instructor\sign_in.aspx" />
+    <Content Include="Instructor\sign_up.aspx" />
+    <Content Include="Instructor\VerifiedInstructor.aspx" />
+    <Content Include="instructor_dashboard.aspx" />
+    <Content Include="instructor_notifications.aspx" />
+    <Content Include="instructor_profile_view.aspx" />
+    <Content Include="invoice.html" />
+    <Content Include="js\chart.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\custom1.js" />
+    <Content Include="js\datepicker.min.js" />
+    <Content Include="js\email-decode.min.js" />
+    <Content Include="js\i18n\datepicker.en.js" />
+    <Content Include="js\jquery-3.3.1.min.js" />
+    <Content Include="js\jquery-steps.min.js" />
+    <Content Include="js\jquery.mCustomScrollbar.js" />
+    <Content Include="js\night-mode.js" />
+    <Content Include="js\test-timer.js" />
+    <Content Include="js\timer.js" />
+    <Content Include="js\vertical-responsive-menu.min.js" />
+    <Content Include="liked_courses.aspx" />
+    <Content Include="live_output.aspx" />
+    <Content Include="live_streams.aspx" />
+    <Content Include="membership.html" />
+    <Content Include="my_instructor_profile_view.aspx" />
+    <Content Include="our_blog.html" />
+    <Content Include="press.html" />
+    <Content Include="report_history.aspx" />
+    <Content Include="Content\bootstrap-datepicker3.standalone.css.map" />
+    <Content Include="Content\bootstrap-datepicker3.css.map" />
+    <Content Include="Content\bootstrap-datepicker.standalone.css.map" />
+    <Content Include="Content\bootstrap-datepicker.css.map" />
+    <Content Include="datedropper\Datedropper3\package.json" />
+    <Content Include="datedropper\Datedropper3\src\datedropper.eot" />
+    <Content Include="datedropper\Datedropper3\src\datedropper.ttf" />
+    <Content Include="datedropper\Datedropper3\src\datedropper.woff" />
+    <Content Include="datedropper\package.json" />
+    <Content Include="datedropper\src\datedropper.eot" />
+    <Content Include="datedropper\src\datedropper.ttf" />
+    <Content Include="datedropper\src\datedropper.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <None Include="Scripts\jquery-3.6.0.intellisense.js" />
+    <Content Include="Scripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\bootstrap-datepicker.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.js" />
+    <Content Include="Scripts\jquery-3.6.0.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker-en-CA.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ar-tn.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ar.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.az.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.bg.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.bn.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.br.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.bs.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ca.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.cs.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.cy.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.da.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.de.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.el.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.en-AU.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.en-CA.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.en-GB.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.en-IE.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.en-NZ.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.en-ZA.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.eo.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.es.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.et.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.eu.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fa.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fi.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fo.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fr-CH.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.gl.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.he.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.hi.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.hr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.hu.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.hy.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.id.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.is.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.it-CH.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.it.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ja.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ka.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.kh.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.kk.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.km.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ko.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.kr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.lt.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.lv.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.me.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.mk.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.mn.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ms.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.nl-BE.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.nl.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.no.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.oc.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.pl.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.pt-BR.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.pt.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ro.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.rs-latin.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.rs.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ru.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.si.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sk.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sl.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sq.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sr-latin.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sv.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sw.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ta.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.tg.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.th.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.tk.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.tr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.uk.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.uz-cyrl.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.uz-latn.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.vi.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.zh-CN.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.zh-TW.min.js" />
+    <Content Include="search_result.html" />
+    <Content Include="setting.aspx" />
+    <Content Include="sign_in.aspx" />
+    <Content Include="sign_up.aspx" />
+    <Content Include="sign_up_steps.aspx" />
+    <Content Include="terms_of_use.html" />
+    <Content Include="thank_you.html" />
+    <Content Include="UserControl\navControl.ascx" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="vendor\charts\Chart.min.js" />
+    <Content Include="vendor\fontawesome-free\css\all.min.css" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <Content Include="vendor\OwlCarousel\assets\owl.carousel.css" />
+    <Content Include="vendor\OwlCarousel\assets\owl.theme.default.min.css" />
+    <Content Include="vendor\OwlCarousel\assets\owl.video.play.png" />
+    <Content Include="vendor\OwlCarousel\owl.carousel.js" />
+    <Content Include="vendor\semantic\semantic.min.css" />
+    <Content Include="vendor\semantic\semantic.min.js" />
+    <Content Include="vendor\semantic\themes\default\assets\fonts\brand-icons.svg" />
+    <Content Include="vendor\semantic\themes\default\assets\fonts\icons.svg" />
+    <Content Include="vendor\semantic\themes\default\assets\fonts\outline-icons.svg" />
+    <Content Include="vendor\semantic\themes\default\assets\images\flags.png" />
+    <Content Include="vendor\unicons-2.0.1\css\unicons.css" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-0.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-1.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-10.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-11.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-12.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-13.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-14.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-15.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-16.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-17.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-18.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-19.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-2.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-20.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-21.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-22.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-23.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-24.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-25.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-26.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-27.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-28.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-29.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-3.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-30.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-31.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-32.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-33.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-34.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-35.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-36.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-37.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-4.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-5.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-6.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-7.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-8.svg" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-9.svg" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="watch_later.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_streaming.aspx.cs">
+      <DependentUpon>add_streaming.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add_streaming.aspx.designer.cs">
+      <DependentUpon>add_streaming.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="all_instructor.aspx.cs">
+      <DependentUpon>all_instructor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="all_instructor.aspx.designer.cs">
+      <DependentUpon>all_instructor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="categories.aspx.cs">
+      <DependentUpon>categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="categories.aspx.designer.cs">
+      <DependentUpon>categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="course_detail_view.aspx.cs">
+      <DependentUpon>course_detail_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="course_detail_view.aspx.designer.cs">
+      <DependentUpon>course_detail_view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="explore.aspx.cs">
+      <DependentUpon>explore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="explore.aspx.designer.cs">
+      <DependentUpon>explore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgot_password.aspx.cs">
+      <DependentUpon>forgot_password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forgot_password.aspx.designer.cs">
+      <DependentUpon>forgot_password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="help.aspx.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="help.aspx.designer.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="history.aspx.cs">
+      <DependentUpon>history.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="history.aspx.designer.cs">
+      <DependentUpon>history.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\forgot_password.aspx.cs">
+      <DependentUpon>forgot_password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\forgot_password.aspx.designer.cs">
+      <DependentUpon>forgot_password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\help.aspx.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\help.aspx.designer.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\instructor.Master.cs">
+      <DependentUpon>instructor.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\instructor.Master.designer.cs">
+      <DependentUpon>instructor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\instructor_all_reviews.aspx.cs">
+      <DependentUpon>instructor_all_reviews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\instructor_all_reviews.aspx.designer.cs">
+      <DependentUpon>instructor_all_reviews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\instructor_analyics.aspx.cs">
+      <DependentUpon>instructor_analyics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\instructor_analyics.aspx.designer.cs">
+      <DependentUpon>instructor_analyics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\instructor_courses.aspx.cs">
+      <DependentUpon>instructor_courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\instructor_courses.aspx.designer.cs">
+      <DependentUpon>instructor_courses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\instructor_dashboard.aspx.cs">
+      <DependentUpon>instructor_dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\instructor_dashboard.aspx.designer.cs">
+      <DependentUpon>instructor_dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\instructor_earning.aspx.cs">
+      <DependentUpon>instructor_earning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\instructor_earning.aspx.designer.cs">
+      <DependentUpon>instructor_earning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\instructor_messages.aspx.cs">
+      <DependentUpon>instructor_messages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\instructor_messages.aspx.designer.cs">
+      <DependentUpon>instructor_messages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\instructor_my_certificates.aspx.cs">
+      <DependentUpon>instructor_my_certificates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\instructor_my_certificates.aspx.designer.cs">
+      <DependentUpon>instructor_my_certificates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\instructor_notifications.aspx.cs">
+      <DependentUpon>instructor_notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\instructor_notifications.aspx.designer.cs">
+      <DependentUpon>instructor_notifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\instructor_payout.aspx.cs">
+      <DependentUpon>instructor_payout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\instructor_payout.aspx.designer.cs">
+      <DependentUpon>instructor_payout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\instructor_statements.aspx.cs">
+      <DependentUpon>instructor_statements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\instructor_statements.aspx.designer.cs">
+      <DependentUpon>instructor_statements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\instructor_verification.aspx.cs">
+      <DependentUpon>instructor_verification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\instructor_verification.aspx.designer.cs">
+      <DependentUpon>instructor_verification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\my_instructor_profile_view.aspx.cs">
+      <DependentUpon>my_instructor_profile_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\my_instructor_profile_view.aspx.designer.cs">
+      <DependentUpon>my_instructor_profile_view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\setting.aspx.cs">
+      <DependentUpon>setting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\setting.aspx.designer.cs">
+      <DependentUpon>setting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\sign_in.aspx.cs">
+      <DependentUpon>sign_in.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\sign_in.aspx.designer.cs">
+      <DependentUpon>sign_in.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\sign_up.aspx.cs">
+      <DependentUpon>sign_up.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\sign_up.aspx.designer.cs">
+      <DependentUpon>sign_up.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\VerifiedInstructor.aspx.cs">
+      <DependentUpon>VerifiedInstructor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\VerifiedInstructor.aspx.designer.cs">
+      <DependentUpon>VerifiedInstructor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="instructor_dashboard.aspx.cs">
+      <DependentUpon>instructor_dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="instructor_dashboard.aspx.designer.cs">
+      <DependentUpon>instructor_dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="instructor_notifications.aspx.cs">
+      <DependentUpon>instructor_notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="instructor_notifications.aspx.designer.cs">
+      <DependentUpon>instructor_notifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="instructor_profile_view.aspx.cs">
+      <DependentUpon>instructor_profile_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="instructor_profile_view.aspx.designer.cs">
+      <DependentUpon>instructor_profile_view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="liked_courses.aspx.cs">
+      <DependentUpon>liked_courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="liked_courses.aspx.designer.cs">
+      <DependentUpon>liked_courses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="live_output.aspx.cs">
+      <DependentUpon>live_output.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="live_output.aspx.designer.cs">
+      <DependentUpon>live_output.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="live_streams.aspx.cs">
+      <DependentUpon>live_streams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="live_streams.aspx.designer.cs">
+      <DependentUpon>live_streams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="my_instructor_profile_view.aspx.cs">
+      <DependentUpon>my_instructor_profile_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="my_instructor_profile_view.aspx.designer.cs">
+      <DependentUpon>my_instructor_profile_view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectData\ObjectStudent.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report_history.aspx.cs">
+      <DependentUpon>report_history.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="report_history.aspx.designer.cs">
+      <DependentUpon>report_history.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="setting.aspx.cs">
+      <DependentUpon>setting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="setting.aspx.designer.cs">
+      <DependentUpon>setting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sign_in.aspx.cs">
+      <DependentUpon>sign_in.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sign_in.aspx.designer.cs">
+      <DependentUpon>sign_in.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sign_up.aspx.cs">
+      <DependentUpon>sign_up.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sign_up.aspx.designer.cs">
+      <DependentUpon>sign_up.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sign_up_steps.aspx.cs">
+      <DependentUpon>sign_up_steps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sign_up_steps.aspx.designer.cs">
+      <DependentUpon>sign_up_steps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\navControl.ascx.cs">
+      <DependentUpon>navControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\navControl.ascx.designer.cs">
+      <DependentUpon>navControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="watch_later.aspx.cs">
+      <DependentUpon>watch_later.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="watch_later.aspx.designer.cs">
+      <DependentUpon>watch_later.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Instructor\instructor.Master" />
+    <None Include="packages.config" />
+    <Content Include="Site.Master" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400d41d.eot" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400d41d.eot" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.woff" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900d41d.eot" />
+    <Content Include="vendor\semantic\themes\default\assets\fonts\brand-icons.eot" />
+    <Content Include="vendor\semantic\themes\default\assets\fonts\brand-icons.ttf" />
+    <Content Include="vendor\semantic\themes\default\assets\fonts\brand-icons.woff" />
+    <Content Include="vendor\semantic\themes\default\assets\fonts\brand-icons.woff2" />
+    <Content Include="vendor\semantic\themes\default\assets\fonts\brand-iconsd41d.eot" />
+    <Content Include="vendor\semantic\themes\default\assets\fonts\icons.eot" />
+    <Content Include="vendor\semantic\themes\default\assets\fonts\icons.ttf" />
+    <Content Include="vendor\semantic\themes\default\assets\fonts\icons.woff" />
+    <Content Include="vendor\semantic\themes\default\assets\fonts\icons.woff2" />
+    <Content Include="vendor\semantic\themes\default\assets\fonts\iconsd41d.eot" />
+    <Content Include="vendor\semantic\themes\default\assets\fonts\outline-icons.eot" />
+    <Content Include="vendor\semantic\themes\default\assets\fonts\outline-icons.ttf" />
+    <Content Include="vendor\semantic\themes\default\assets\fonts\outline-icons.woff" />
+    <Content Include="vendor\semantic\themes\default\assets\fonts\outline-icons.woff2" />
+    <Content Include="vendor\semantic\themes\default\assets\fonts\outline-iconsd41d.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-0.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-0.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-0.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-0.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-1.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-1.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-1.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-1.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-10.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-10.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-10.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-10.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-11.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-11.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-11.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-11.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-12.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-12.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-12.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-12.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-13.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-13.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-13.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-13.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-14.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-14.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-14.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-14.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-15.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-15.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-15.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-15.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-16.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-16.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-16.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-16.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-17.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-17.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-17.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-17.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-18.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-18.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-18.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-18.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-19.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-19.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-19.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-19.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-2.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-2.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-2.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-2.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-20.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-20.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-20.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-20.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-21.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-21.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-21.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-21.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-22.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-22.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-22.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-22.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-23.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-23.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-23.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-23.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-24.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-24.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-24.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-24.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-25.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-25.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-25.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-25.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-26.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-26.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-26.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-26.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-27.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-27.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-27.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-27.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-28.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-28.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-28.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-28.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-29.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-29.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-29.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-29.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-3.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-3.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-3.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-3.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-30.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-30.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-30.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-30.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-31.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-31.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-31.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-31.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-32.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-32.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-32.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-32.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-33.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-33.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-33.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-33.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-34.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-34.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-34.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-34.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-35.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-35.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-35.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-35.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-36.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-36.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-36.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-36.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-37.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-37.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-37.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-37.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-4.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-4.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-4.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-4.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-5.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-5.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-5.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-5.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-6.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-6.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-6.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-6.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-7.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-7.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-7.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-7.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-8.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-8.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-8.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-8.woff2" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-9.eot" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-9.ttf" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-9.woff" />
+    <Content Include="vendor\unicons-2.0.1\fonts\unicons-9.woff2" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.6.0.min.map" />
+    <Content Include="Site.Mobile.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="GoogleAu\" />
+    <Folder Include="InstructorImage\" />
+    <Folder Include="Instructor\Uploads\" />
+    <Folder Include="Models\" />
+    <Folder Include="StudentImage\" />
+    <Folder Include="Uploads\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56760</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54575/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
